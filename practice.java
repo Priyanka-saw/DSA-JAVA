@@ -1,22 +1,18 @@
-
 public class practice {
 
     public static void main(String[] args) {
-        // is arr is sorted or not
-
-        int[] arr = { 1, 2, 3, 4, 5 };
+        int[] arr = { 1, 2, 3, 4, 4, 5, 5};
         System.out.println(sortedArr(arr));
     }
 
-    public static boolean sortedArr(int[] arr) {
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > arr[i - 1]) {
-                System.out.println(i);
-            } else {
-                return false;
-
+    public static int sortedArr(int[] arr) {
+        int i = 0;
+        for(int j = 1; j < arr.length; j++){
+            if(arr[j] != arr[i]){
+                arr[i + 1] = arr[j];
+                i++;
             }
         }
-        return true;
+        return (i + 1);
     }
 }
