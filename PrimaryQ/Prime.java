@@ -10,7 +10,7 @@ public class Prime {
 
         int count = 0;
          for (int i = 2; i*i <= n; i++) {
-           if(n % 2 == 0){
+           if(n % i == 0){
             count++;
             break;
            } 
