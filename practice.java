@@ -1,20 +1,25 @@
+import java.util.Scanner;
 
 public class practice {
     public static void main(String[] args) {
 
-        int[] arr = {1, 3, 3, 5, 6, 7};
-        System.out.println(duplicate(arr));
-        
-    }
-    public static int duplicate(int[] arr){
-        
-         int i = 0;
-        for (int j = 1; j < arr.length; j++) {
-            if(arr[j] != arr[i]){
-                arr[i + 1] = arr[j];
-                i++;
-            }
-        }
-        return (i+1);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number");
+        int first = sc.nextInt();
+        int second = sc.nextInt();
+
+        // int first = 12;
+        // int second = 13;
+        // System.out.println(first + " " + second);
+
+        // first = first + second;
+        // second = first - second;
+        // first = first - second;
+
+        first = first ^ second;
+        second = first ^ second;
+        first = first ^ second;
+
+        System.err.println(first + " " + second);
     }
 }
