@@ -3,23 +3,18 @@ import java.util.Scanner;
 public class practice {
     public static void main(String[] args) {
 
+        // factorial number
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number");
-        int first = sc.nextInt();
-        int second = sc.nextInt();
+        int number = sc.nextInt();
 
-        // int first = 12;
-        // int second = 13;
-        // System.out.println(first + " " + second);
-
-        // first = first + second;
-        // second = first - second;
-        // first = first - second;
-
-        first = first ^ second;
-        second = first ^ second;
-        first = first ^ second;
-
-        System.err.println(first + " " + second);
+        int factorial = 1;
+        for (int i = 1; i <= number; i++) {
+            if (number < 0) {
+                System.out.println("negative not allowed for factorial");
+            } else {
+                factorial *= i;
+            }
+            System.out.println(factorial);
+        }
     }
 }
