@@ -5,16 +5,16 @@ public class practice {
 
         // factorial number
         Scanner sc = new Scanner(System.in);
-        int number = sc.nextInt();
+        String number = sc.nextLine();
 
-       int fact = 1;
-       for(int i = 1; i <= number; i++){
-        if(number < 0){
-            System.out.println("factorial is not available for non -ve number");
-        } else{
-            fact *= i;
+        String valuecpm = "";
+        for(int i = number.length()-1; i >= 0; i--){
+            valuecpm += number.charAt(i);
         }
-        System.out.println("factorial : " + fact);
-       }
+        if(number.equalsIgnoreCase(valuecpm)){
+            System.out.println("palindrome");
+        } else{
+            System.out.println("not palindrome");
+        }
     }
 }
