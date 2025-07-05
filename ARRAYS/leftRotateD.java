@@ -22,6 +22,5 @@ public class leftRotateD {
             start++;
             end--;
         }
-        
     }
 }

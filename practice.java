@@ -1,40 +1,35 @@
-
+import java.util.*;
 public class practice {
     public static void main(String[] args) {
 
-        // factorial number
-        // Scanner sc = new Scanner(System.in);
-        // String number = sc.nextLine();
+        int arr[] = {11, 12, 13, 14, 15};
+    //     System.out.println("Maximum value is : " + MaxVal(arr));
+    // }
+    // public static int MaxVal(int[] arr){
+    //     int max = -1, secmax = -1;
+    //     for (int i = 0; i < arr.length; i++) {
+    //         if(arr[i] > max){
+    //             max = arr[i];
+    //         }
+    //     }
+    //     for (int i = 0; i < arr.length; i++) {
+    //         if(arr[i] > secmax && arr[i] != max){
+    //             secmax = arr[i];
+    //         } 
+    //     }
+    //     return  secmax;
 
-        // String valuecpm = "";
-        // for(int i = number.length()-1; i >= 0; i--){
-        //     valuecpm += number.charAt(i);
-        // }
-        // if(number.equalsIgnoreCase(valuecpm)){
-        //     System.out.println("palindrome");
-        // } else{
-        //     System.out.println("not palindrome");
-        // }
-
-        // find second largest number
-        int arr[] = {1, 2, 3, 4, 5};
-        System.out.println("second largest numebr is : " + secMax(arr) );
+    System.out.println("sorted value : " + sortedval(arr));
+        System.out.println(Arrays.toString(arr));
     }
-    public static int secMax(int[] arr){
-        int max = -1, secmax = -1;
+    public static boolean sortedval(int[] arr){
+        for (int i = 1; i < arr.length; i++) {
+            if(arr[i] >= arr[i - 1]) {
 
-        // find largest number
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i] > max){
-                max = arr[i];
+            } else{
+                return false;
             }
         }
-        // find seclagest value
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i] > secmax && arr[i] != max){
-                secmax = arr[i];
-            }
-        }
-        return secmax;
+        return true;
     }
 }
