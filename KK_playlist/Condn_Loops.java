@@ -95,7 +95,7 @@ public class Condn_Loops {
         int a = 0;
         int b = 1;
         for(int i = 1; i <= fibo; i++){
-            // System.out.println("fibonacci number is " + a);
+            // System.out.println("fibonacci number is" + a);
             int temp = a + b;
             a = b;
             b = temp;

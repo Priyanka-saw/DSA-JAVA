@@ -36,14 +36,15 @@ public class Calculator {
                     if (num2 != 0) {
                         ans = num1 / num2;
                     }
-                } 
+                
                 else if (op == 'x' || op == 'X') {
                     break;
                     
                 } else {
-                    // System.out.println("invalid operator...");
+                    System.out.println("invalid operator...");
                 }
-                System.out.println(ans);
+            }
+            System.out.println(ans);
             }
 
         }
