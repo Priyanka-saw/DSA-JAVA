@@ -11,3 +11,11 @@
 - method is inside the class and in java usually study about method becoz the whatever we doing iside the class only
 
 - in java only pass by value no pass by reference
+
+<!--Arrays -->
+1. arrays object are in heap 
+2. heap objects are , not continous
+3. dynamic memory alocation hence, java internally may be not the continous memory allocation becouse it depends on jvm
+
+- Arrays are mutable 
+- while string are immutable 
