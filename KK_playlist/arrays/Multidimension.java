@@ -52,5 +52,7 @@ public class Multidimension {
         for (int[] i : arr) {
             System.out.println(Arrays.toString(i));
         }
+
+        
     }
 }
