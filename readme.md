@@ -20,6 +20,7 @@
 
 - Arrays are mutable
 - while string are immutable
+- passing by the reference of the values [same object different reference] not copy of the value in javano such things
 
 -Declaration of the 2d arrays
 - int[][] arr1 = {
